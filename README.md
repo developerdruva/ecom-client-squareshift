@@ -1,5 +1,3 @@
-# ecom-fe-sudoshop
+# ecommerce sample cart application
 
-an ecommerce application for online shopping frontend
-
-# final submition
+# squareshift

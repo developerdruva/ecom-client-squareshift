@@ -9,19 +9,7 @@ import '../css/navbar.css';
 
 const Navbar = (props) => {    
     const navigate = useNavigate();
-    const userInfo = useSelector(state => state.userState);
     const cartVals = useSelector(state => state.cartVals);
-
-    const token = localStorage.getItem('token');
-    let deToken = null;
-    if(token !== null){
-        deToken = jwt_decode(token);
-    }
-    
-    const logOut = () => {
-        localStorage.clear();
-        navigate('/');
-    }
 
    
     return (
@@ -30,7 +18,7 @@ const Navbar = (props) => {
             <nav className="navbar sticky-top flex-md-nowrap p-0 shadow " style={{backgroundColor: '#E8F8F5'}} >
                 <div className="container">
                     <span className="navbar-brand col-md-2" >
-                        sudoshop
+                        sqareshift
                     </span>
                     <ul className="nav ">
                         <li className="nav-item">
